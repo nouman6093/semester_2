@@ -1,6 +1,6 @@
 public class link_objects_owner {
     private String name;
-    int cnic;
+    private int cnic;
 
     public void setName(String name) {
         this.name = name;
@@ -24,7 +24,7 @@ public class link_objects_owner {
         this.bike_object = new link_objects_bike(company_name, engine_cc);
     }
     public void display_owner_details(){
-        System.out.print("Owner name: "+name);
-        System.out.print("Owner cnic: "+cnic);
+        System.out.print("Owner name: "+this.getName());
+        System.out.print("Owner cnic: "+this.getCnic());
     }
 }
